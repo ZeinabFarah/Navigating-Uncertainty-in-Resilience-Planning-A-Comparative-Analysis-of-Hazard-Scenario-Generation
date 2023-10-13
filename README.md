@@ -1,5 +1,5 @@
 ### Efficient Sampling Method for Community Resilience System Models
-This repository comprises two distinct folders: **"Codes"** and **"Manuscript"**, each of which is briefly explained in the sections below.  
+This repository comprises two distinct folders: **"Codes"** and **"Manuscript"**:
 
 #### Codes  
 This folder *(master branch)* includes two subfolders: 
