@@ -2,7 +2,7 @@
 This repository comprises two distinct folders: **"Codes"** and **"Manuscript"**, each of which is briefly explained in the sections below.  
 
 #### Codes  
-The code folder includes two subfolders: 
+This folder (in the master branch) includes two subfolders: 
 
 1. *Illustrative Example*  
 This folder contains code that illustrates the efficiency of Importance Sampling and crude Monte Carlo as methods for generating hazard scenarios, using a hypothetical example.   
@@ -10,8 +10,8 @@ This folder contains code that illustrates the efficiency of Importance Sampling
 2. *Hazard Scenario Generation*  
 This directory includes code that demonstrates the significance of selecting the appropriate hazard scenario. It analyzes the results of both Crude Monte Carlo and Importance Sampling methods, shedding light on their implications for the decision-making process.
  
-#### Overleaf Manuscript
-This folder contains the manuscript detailing the Monte Carlo simulation and the importance sampling method to propagate uncertainty in community resilience models. 
+#### Manuscript
+This folder (in the main branch) contains the Overleaf manuscript detailing the Monte Carlo simulation and the importance sampling method to propagate uncertainty in community resilience models. 
 
 #### Getting Started
 To use the code, clone the repository and navigate to the desired folder.  
