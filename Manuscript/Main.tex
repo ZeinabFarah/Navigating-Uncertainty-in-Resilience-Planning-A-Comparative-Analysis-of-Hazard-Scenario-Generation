@@ -1,0 +1,34 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   	FILL OUT METADATA IN THE PREAMBLE TEX FILE FIRST
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Style/preamble}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   	BEGIN DOCUMENT 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+    \urlstyle{rm} % Format style of \url  
+    
+    \input{Sections/title}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %   Header text and page numbering
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \pagestyle{fancy}
+    \renewcommand{\headrulewidth}{0pt}
+      \fancyhead{}
+      \fancyhead[l]{\small \pubnumber \\ 
+    	\small \pubmonth~\pubyear \\}
+    \pagenumbering{arabic}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %   Start the body of text - page number starts with "1"
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \input{Sections/Introduction}
+    \input{Sections/Background}
+    \input{Sections/Methods} 
+    \input{Manuscript/Sections/Illustrative Example}
+    \input{Sections/Hazard Scenario Selection}
+    \input{Manuscript/Sections/Discussions and Recommendations}
+    \input{Sections/References} 
+
+\end{document}

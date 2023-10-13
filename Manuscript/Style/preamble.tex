@@ -1,0 +1,71 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   LaTeX source code to approximate a NIST Technical report
+%	DOI and CrossMark watermark will be added on final PDF
+% 	Developed by K. Miller, kmm5@nist.gov 
+%	Last updated: 21-June-2022
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Document class and template package DO NOT DELETE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{article}
+\usepackage{Style/settings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DRAFT: TRUE OR FALSE?
+% REQUIRED!!! Select either Draft (toggletrue) or Final (togglefalse)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtoggle{draft}
+% \toggletrue{draft} % use if this is a Draft
+\togglefalse{draft} % use if this is Final
+
+\iftoggle{draft}{
+    \usepackage{lineno}
+    \linenumbers
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Publication Metadata
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\pubseries}{Series [Technical Note]} % Replace with a series title from the list below %
+% {Advanced Manufacturing Series}
+% {Data Collection Instruments}
+% {Economic Analysis Brief}
+% {Grant/Contractor Report}
+% {Handbook}
+% {IR}
+% {Special Publication}
+% {Technical Note}
+% {Technology Transfer Brief}
+% {NCSTAR}
+\newcommand{\pubnumber}{Publication Identifier} 
+\newcommand{\DOI}{https://doi.org/10.6028/NIST.XXX.XXXX}
+\newcommand{\pubmonth}{Month}
+\newcommand{\pubyear}{Year}
+\newcommand{\erratadate}{MM-DD-YYYY}
+\newcommand{\pubtitle}{Navigating Uncertainty in Resilience Planning: A Comparative Analysis of Hazard Scenario Generation Methods}
+% \newcommand{\pubsubtitle}{Subtitle} % delete if no subtitle %
+% \newcommand{\draftstage}{Draft Stage} % Draft Stage is REQUIRED for drafts/preprints; Draft stages are listed in the NIST Publication Identifier guidance: https://www.nist.gov/nist-research-library/nist-technical-series-publications-author-instructions#pubid   %
+\newcommand{\authorlist}{Zeinab Farahmandfar, Kenneth Harrison}
+\newcommand{\authorone}{Zeinab Farahmandfar}
+\newcommand{\authortwo}{Kenneth Harrison}
+
+\newcommand{\pubabstract}{This paper presents a comparative analysis of the performance of Importance Sampling (IS) and Crude Monte Carlo (MC) simulation methods for generating a representative hazard scenario, with a particular focus on their implications for community resilience. The ability to accurately represent a hazard scenario is crucial in assessing and enhancing community resilience, and this study sheds light on the critical importance of choosing the right scenario generation approach.\\
+Using an illustrative example, we provide a clear and accessible visualization of the performance of both MC and IS methods. To facilitate this comparison, we begin by defining a pre-mitigation hypothetical loss function, serving as a baseline for assessing resilience. Subsequently, three distinct resilience actions are introduced, each resulting in a unique loss function representing post-mitigation losses.\\
+By generating hazard scenarios using both MC and IS techniques, we demonstrate that the choice of sampling method significantly influences the decision-making process regarding resilience actions. Our analysis reveals that an inaccurate or inadequate representation of a hazard scenario can lead to suboptimal decisions, potentially jeopardizing community resilience efforts.}
+\newcommand{\keywords}{Uncertainty; Monte Carlo Simulation; Importance Sampling; Markov Chain Monte Carlo; Community Resilience; Disaster; Natural Hazards; Hazard Scenario.}
+\newcommand{\publang}{English} %If translation, change to correct language%
+
+\usepackage{Style/pdfproperties}
+
+\newcommand{\SampleSize}{20}
+\newcommand{\TrueValue}{0.079}
+\newcommand{\MCResult}{0.045}
+\newcommand{\TruncatedMCResult}{0.646}
+\newcommand{\TraditionalISResult}{0.068}
+\newcommand{\MCMCISResult}{0.079}
+
+\newcommand{\MCError}{0.883}
+\newcommand{\TruncatedMCError}{7.217}
+\newcommand{\TraditionalISError}{0.755}
+\newcommand{\MCMCISError}{0.036}

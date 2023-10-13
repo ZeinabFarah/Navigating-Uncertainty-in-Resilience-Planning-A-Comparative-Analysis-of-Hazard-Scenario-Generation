@@ -1,0 +1,35 @@
+%----------------------------------------------------------------------------------------
+%	THEMES
+%----------------------------------------------------------------------------------------
+\documentclass[aspectratio=169,xcolor=dvipsnames]{beamer}
+\usepackage{Style/theme}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+    \input{Sections/Title}
+
+    \begin{frame}{Outline}
+        \tableofcontents
+    \end{frame}
+
+    \input{Sections/Research Objectives}
+    % \input{Sections/Background}
+    % \input{Sections/Introduction}
+    % \input{Sections/Literature Review}
+    % \input{Sections/Methodology}
+    % \input{Sections/Results and Discussion}
+    % \input{Sections/Conclusions and Recommendations}
+
+    \begin{frame}<presentation:0>[allowframebreaks]{References}
+        \bibliography{References}
+    \end{frame}
+
+    \begin{frame}
+        \Huge{\centerline{Thank you for your attention}}
+    \end{frame}
+
+\end{document}
