@@ -1,4 +1,5 @@
-### Efficient Sampling Method for Community Resilience System Models
+### Navigating Uncertainty in Resilience Planning: A Comparative Analysis of Hazard Scenario Generation
+
 This repository comprises two distinct folders: **"Codes"** and **"Manuscript"**:
 
 #### Codes  
