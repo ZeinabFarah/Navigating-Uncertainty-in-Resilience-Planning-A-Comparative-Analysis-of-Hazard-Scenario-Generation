@@ -1,15 +1,16 @@
 \begin{table}[H]
     \centering
-    \caption{Comparison of estimation and relative error for four estimators in the illustrative example}
+    \caption{Comparison of estimation and relative error for three estimators in the illustrative example using 20 samples (Averaged over 10 experiments)}
     \label{table:illustrative_results}
     \small
-    \begin{tabular}{lcccc}
+    \begin{tabular}{lccc}
         \hline
-        & \textbf{crude MC} & \textbf{truncated MC} & \textbf{traditional IS} & \textbf{MCMC-IS} \\
+        & \textbf{crude MC} & \textbf{manual-IS} & \textbf{MCMC-IS} \\
         \hline
         \textbf{Estimation}\\
-        true value = \TrueValue & \MCResult & \TruncatedMCResult & \TraditionalISResult & \MCMCISResult \\
-        \textbf{Relative Error} & \MCError & \TruncatedMCError & \TraditionalISError & \MCMCISError\\
+        true value = \TrueValue & \MCResult & \TraditionalISResult & \MCMCISResult \\
+        \textbf{Relative Error} & \MCError & \TraditionalISError & \MCMCISError\\
+        \textbf{Standard Error of the Mean} & \MCSEM & \TraditionalISSEM & \MCMCISSEM\\
         \hline
     \end{tabular}
 \end{table}
